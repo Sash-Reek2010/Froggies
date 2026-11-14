@@ -1944,7 +1944,7 @@ position = Vector2(2506, -344)
 position = Vector2(3503, -35)
 
 [node name="Area2D8" parent="." unique_id=1353620829 instance=ExtResource("28_xuqvo")]
-position = Vector2(5243, -411)
+position = Vector2(4744, -180)
 
 [node name="Area2D9" parent="." unique_id=2105941064 instance=ExtResource("28_xuqvo")]
 position = Vector2(5153, -39)
