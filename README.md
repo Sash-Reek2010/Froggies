@@ -1,2 +1,3 @@
-# Froggies
-A Godot rpg where you dodge frogs and stuff
+# Red Carnage
+A Godot platformer where you collect blood to stay alive or you DIE!
+
