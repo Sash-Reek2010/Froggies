@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bemqnd3uo2fyk"]
+
+[ext_resource type="Script" uid="uid://cra7nqv8hdlt3" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://bm6magydbaio8" path="res://art/Haven/Startbutton.png" id="2_4hy44"]
+[ext_resource type="Texture2D" uid="uid://bse40bk8no0aj" path="res://art/Haven/Title.png" id="2_ytr4m"]
+[ext_resource type="Texture2D" uid="uid://bo0rpmibg34yq" path="res://art/Haven/Option button.png" id="3_ytr4m"]
+[ext_resource type="Texture2D" uid="uid://bgkyjj4loahll" path="res://art/Haven/quit button.png" id="4_l48gv"]
+[ext_resource type="AudioStream" uid="uid://bfw3mrsoo3sfr" path="res://music/8BIT01 - GP Ensemble - 4 4 - C  minor - 75BPM.mp3" id="6_l48gv"]
+
+[node name="menu" type="Node2D" unique_id=1703973683]
+script = ExtResource("1_lti8b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1398302465]
+position = Vector2(586.5, 325)
+scale = Vector2(3.6718748, 3.6222222)
+texture = ExtResource("2_ytr4m")
+
+[node name="button_manager" type="Control" parent="." unique_id=396716210]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="start" type="TextureButton" parent="button_manager" unique_id=532942673]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 341.0
+offset_right = 833.0
+offset_bottom = 981.0
+texture_normal = ExtResource("2_4hy44")
+stretch_mode = 0
+
+[node name="options" type="TextureButton" parent="button_manager" unique_id=579118365]
+layout_mode = 0
+offset_left = -139.0
+offset_top = -151.0
+offset_right = 476.0
+offset_bottom = 391.0
+texture_normal = ExtResource("3_ytr4m")
+stretch_mode = 4
+
+[node name="quit" type="TextureButton" parent="button_manager" unique_id=501228447]
+layout_mode = 0
+offset_left = 677.0
+offset_top = -157.0
+offset_right = 1313.0
+offset_bottom = 427.0
+texture_normal = ExtResource("4_l48gv")
+stretch_mode = 5
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=163782608]
+stream = ExtResource("6_l48gv")
+autoplay = true
+
+[connection signal="pressed" from="button_manager/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="button_manager/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="button_manager/quit" to="." method="_on_quit_pressed"]

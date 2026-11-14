@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjcv1q7px6gt7"
+path="res://.godot/imported/8BIT04 - GP Ensemble - 4 4 - G minor - 100BPM.mp3-d698dce7407bac1700711bae86f96ee4.mp3str"
+
+[deps]
+
+source_file="res://music/8BIT04 - GP Ensemble - 4 4 - G minor - 100BPM.mp3"
+dest_files=["res://.godot/imported/8BIT04 - GP Ensemble - 4 4 - G minor - 100BPM.mp3-d698dce7407bac1700711bae86f96ee4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
